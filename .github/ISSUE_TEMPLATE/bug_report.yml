@@ -1,0 +1,25 @@
+name: Bug report
+description: Report a problem
+labels: ["bug"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+    validations:
+      required: true
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: Steps to reproduce
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected behavior
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional context
+      description: Add any other context or notes.
+    validations:
+      required: false
