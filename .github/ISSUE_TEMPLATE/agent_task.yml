@@ -1,0 +1,31 @@
+name: Agent task
+description: Define a task for an AI coding agent
+labels: ["agent-task"]
+body:
+  - type: textarea
+    id: objective
+    attributes:
+      label: Objective
+      description: Describe the desired outcome.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Include relevant background, links, or code.
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope and constraints
+      description: Note boundaries or task-specific constraints, if any.
+  - type: input
+    id: recommended-agent-or-model
+    attributes:
+      label: Recommended agent or model
+      description: Suggest an agent or model, if helpful.
+  - type: textarea
+    id: human-review-notes
+    attributes:
+      label: Human review notes
+      description: Flag anything a human reviewer should check or keep in mind.
